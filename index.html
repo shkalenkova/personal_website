@@ -669,32 +669,35 @@
       <p>Заполните форму — я изучу ваш бизнес заранее, и на встрече вы сразу получите конкретные наблюдения, а не общие слова.</p>
     </div>
 
-    <form>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="30003b22-b168-4db2-9020-3d1f2c4b230b">
+      <input type="hidden" name="subject" value="Новая заявка на аудит — сайт Полины Шкаленковой">
+      <input type="hidden" name="from_name" value="Сайт Полины Шкаленковой">
       <div class="form-grid">
 
         <div class="field">
           <label>Имя *</label>
-          <input type="text" placeholder="Имя и фамилия" required />
+          <input type="text" name="name" placeholder="Имя и фамилия" required />
         </div>
 
         <div class="field">
           <label>Email или Telegram *</label>
-          <input type="text" placeholder="Как связаться" required />
+          <input type="text" name="email" placeholder="Как связаться" required />
         </div>
 
         <div class="field full">
           <label>Чем занимается ваш бизнес и кто ваш клиент? *</label>
-          <textarea placeholder="Пара предложений о вашем проекте..." required></textarea>
+          <textarea name="Бизнес и клиент" placeholder="Пара предложений о вашем проекте..." required></textarea>
         </div>
 
         <div class="field">
           <label>Что сейчас не работает? *</label>
           <div class="radio-group">
-            <label><input type="radio" name="problem" /> Мало заявок и клиентов</label>
-            <label><input type="radio" name="problem" /> Реклама есть, но не окупается</label>
-            <label><input type="radio" name="problem" /> Нет системы — только сарафан</label>
-            <label><input type="radio" name="problem" /> Хочу выйти на новый рынок</label>
-            <label><input type="radio" name="problem" /> Другое</label>
+            <label><input type="radio" name="Что не работает" /> Мало заявок и клиентов</label>
+            <label><input type="radio" name="Что не работает" /> Реклама есть, но не окупается</label>
+            <label><input type="radio" name="Что не работает" /> Нет системы — только сарафан</label>
+            <label><input type="radio" name="Что не работает" /> Хочу выйти на новый рынок</label>
+            <label><input type="radio" name="Что не работает" /> Другое</label>
           </div>
         </div>
 
@@ -712,17 +715,17 @@
         <div class="field">
           <label>Бюджет на маркетинг в месяц *</label>
           <div class="radio-group">
-            <label><input type="radio" name="budget" /> До 500 €</label>
-            <label><input type="radio" name="budget" /> 500 € — 2 000 €</label>
-            <label><input type="radio" name="budget" /> 2 000 € — 5 000 €</label>
-            <label><input type="radio" name="budget" /> 5 000 € и выше</label>
-            <label><input type="radio" name="budget" /> Пока нет — ищу стратегию</label>
+            <label><input type="radio" name="Бюджет" /> До 500 €</label>
+            <label><input type="radio" name="Бюджет" /> 500 € — 2 000 €</label>
+            <label><input type="radio" name="Бюджет" /> 2 000 € — 5 000 €</label>
+            <label><input type="radio" name="Бюджет" /> 5 000 € и выше</label>
+            <label><input type="radio" name="Бюджет" /> Пока нет — ищу стратегию</label>
           </div>
         </div>
 
         <div class="field">
           <label>Ссылка на сайт или соцсети</label>
-          <input type="text" placeholder="https://" />
+          <input type="text" name="Сайт или соцсети" placeholder="https://" />
           <p style="font-size:12px;color:#6B6B67;margin-top:8px;">Чтобы я могла изучить ваш проект заранее</p>
         </div>
 
