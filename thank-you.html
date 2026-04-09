@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Спасибо — Полина Шкаленкова</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green: #1A6644;
+    --green-light: #E8F2EC;
+    --green-mid: #2D8A5E;
+    --black: #111110;
+    --gray: #6B6B67;
+    --border: rgba(17,17,16,0.12);
+    --white: #FAFAF8;
+    --serif: 'Playfair Display', Georgia, serif;
+    --sans: 'DM Sans', system-ui, sans-serif;
+  }
+
+  html, body {
+    height: 100%;
+    font-family: var(--sans);
+    background: var(--white);
+    color: var(--black);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav {
+    border-bottom: 1px solid var(--border);
+    padding: 0 48px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .nav-name {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .page {
+    min-height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+  }
+
+  .card {
+    max-width: 560px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon {
+    width: 64px;
+    height: 64px;
+    background: var(--green-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 32px;
+  }
+  .icon svg {
+    width: 28px;
+    height: 28px;
+    stroke: var(--green);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--green);
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--gray);
+    margin-bottom: 40px;
+  }
+
+  .divider {
+    width: 40px;
+    height: 1px;
+    background: var(--border);
+    margin: 0 auto 40px;
+  }
+
+  .instagram-block {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 28px 32px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--black);
+    transition: background 0.2s, border-color 0.2s;
+    margin-bottom: 32px;
+  }
+  .instagram-block:hover {
+    background: var(--green-light);
+    border-color: var(--green);
+  }
+
+  .ig-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ig-icon svg {
+    width: 26px;
+    height: 26px;
+    stroke: #fff;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .ig-text p:first-child {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+  .ig-text p:last-child {
+    font-size: 13px;
+    color: var(--gray);
+  }
+
+  .ig-arrow {
+    margin-left: auto;
+    font-size: 18px;
+    color: var(--gray);
+    flex-shrink: 0;
+  }
+
+  .back-link {
+    font-size: 13px;
+    color: var(--gray);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .back-link:hover {
+    color: var(--green);
+    border-color: var(--green);
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .card { animation: fadeUp 0.6s ease both; }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-name" href="index.html">Полина Шкаленкова</a>
+</nav>
+
+<div class="page">
+  <div class="card">
+
+    <div class="icon">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+
+    <p class="eyebrow">Заявка получена</p>
+
+    <h1>Спасибо, я уже <em>вижу</em> вашу заявку</h1>
+
+    <p class="text">
+      Я изучу информацию о вашем бизнесе и свяжусь с вами в течение 24 часов,<br>
+      чтобы договориться о встрече. До звонка я уже посмотрю ваш сайт<br>
+      и соцсети — чтобы первая встреча сразу давала пользу.
+    </p>
+
+    <div class="divider"></div>
+
+    <a class="instagram-block" href="https://www.instagram.com/polina_shkalenkova" target="_blank" rel="noopener">
+      <div class="ig-icon">
+        <svg viewBox="0 0 24 24">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/>
+        </svg>
+      </div>
+      <div class="ig-text">
+        <p>Подписывайтесь на мой Instagram</p>
+        <p>Маркетинг, кейсы и полезные советы каждую неделю</p>
+      </div>
+      <span class="ig-arrow">→</span>
+    </a>
+
+    <a class="back-link" href="index.html">← Вернуться на сайт</a>
+
+  </div>
+</div>
+
+</body>
+</html>
